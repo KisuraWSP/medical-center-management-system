@@ -3,98 +3,98 @@ import { Route, Routes } from "react-router-dom";
 
 
 // pages <- common for every actor type
-import Home from "./views/Home";
-import { Login, Signup } from "./views/Index";
-import Contact from './views/ContactUs';
+import Home from "./views/Home.page";
+import { Login, Signup } from "./views/Index.page";
+import Contact from './views/ContactUs.page';
 
 // doctor imports
-import Doctor from './views/doctor-views/doctor-home';
-import Channeling from './views/doctor-views/channeling';
-import Symptoms from "./views/doctor-views/symptoms";
-import Prescription from "./views/doctor-views/prescription";
-import DoctorProfileCreate from "./views/doctor-views/doctor-profile-create";
-import DoctorProfile from "./views/doctor-views/profile"
+import Doctor from './views/doctor-views/doctor-home.page';
+import Channeling from './views/doctor-views/channeling.page';
+import Symptoms from "./views/doctor-views/symptoms.page";
+import Prescription from "./views/doctor-views/prescription.page";
+import DoctorProfileCreate from "./views/doctor-views/doctor-profile-create.page";
+import DoctorProfile from "./views/doctor-views/profile.page";
 
 // patient imports
-import Patient from './views/patient-views/patient-home';
-import SearchDoctors from './views/patient-views/searchDoctors';
-import CommonPatientDashboard from './views/patient-views/common-patient-dashboard';
+import Patient from './views/patient-views/patient-home.page';
+import SearchDoctors from './views/patient-views/searchDoctors.page';
+import CommonPatientDashboard from './views/patient-views/common-patient-dashboard.page';
 //import PatientNavigationBar from './views/patient-views/patient-navigation-bar';
-import SearchChanelling from './views/patient-views/search-chanelling';
-import PatientCreateAccount from './views/patient-views/patient-create-account';
-import PatientMakeChanelling from './views/patient-views/make-chanelling';
-import ChanellingConfirmation from './views/patient-views/chanelling-confirmation';
-import PatientProfile from './views/patient-views/patient-profile';
-import PatientInquiries from './views/patient-views/inquiries';
-import PatientAdditionalFiles from './views/patient-views/patient-additional-files';
-import InquiryList from './views/patient-views/inq-handle';
-import EditInquiry from "./views/patient-views/EditInquery";
-import Reschedule from './views/patient-views/reschedule';
-import Delete from './views/patient-views/delete';
+import SearchChanelling from './views/patient-views/search-chanelling.page';
+import PatientCreateAccount from './views/patient-views/patient-create-account.page';
+import PatientMakeChanelling from './views/patient-views/make-chanelling.page';
+import ChanellingConfirmation from './views/patient-views/chanelling-confirmation.page';
+import PatientProfile from './views/patient-views/patient-profile.page';
+import PatientInquiries from './views/patient-views/inquiries.page';
+import PatientAdditionalFiles from './views/patient-views/patient-additional-files.page';
+import InquiryList from './views/patient-views/inq-handle.page';
+import EditInquiry from "./views/patient-views/EditInquery.page";
+import Reschedule from './views/patient-views/reschedule.page';
+import Delete from './views/patient-views/delete.page';
 
 // pharmacist imports
-import Pharmacist from './views/pharmacist-views/parmacist-home';
-import UpdateMedicine from './views/pharmacist-views/updateMedicine';
-import PharmacistProfile from './views/pharmacist-views/pharmacistProfile';
-import UpdateProfile from './views/pharmacist-views/updateProfile';
-import MedicineStore from './views/pharmacist-views/medicineStore';
-import MedicineOrder from './views/pharmacist-views/medicineOrders';
-import MedicineSales from './views/pharmacist-views/medicineSales';
-import FormPage from "./views/pharmacist-views/addMedicine";
-import updateMedicine from "./views/pharmacist-views/updateMedicine";
+import Pharmacist from './views/pharmacist-views/parmacist-home.page';
+import UpdateMedicine from './views/pharmacist-views/updateMedicine.page';
+import PharmacistProfile from './views/pharmacist-views/pharmacistProfile.page';
+import UpdateProfile from './views/pharmacist-views/updateProfile.page';
+import MedicineStore from './views/pharmacist-views/medicineStore.page';
+import MedicineOrder from './views/pharmacist-views/medicineOrders.page';
+import MedicineSales from './views/pharmacist-views/medicineSales.page';
+import FormPage from "./views/pharmacist-views/addMedicine.page";
+
 
 // hr imports 
-import HR from './views/hr-views/hr-home';
-import Registration from './views/hr-views/hr-emp-registration';
-import Profile from './views/hr-views/emp-profile';
-import EditEmployee from './views/hr-views/Edit_employee';
-import Payrollsystem from './views/hr-views/Payroll-Management';
+import HR from './views/hr-views/hr-home.page';
+import Registration from './views/hr-views/hr-emp-registration.page';
+import Profile from './views/hr-views/emp-profile.page';
+import EditEmployee from './views/hr-views/Edit_employee.page';
+import Payrollsystem from './views/hr-views/Payroll-Management.page';
 
 // lab assistant imports
-import LA from './views/lab-assistant-views/lab-assistant-home';
-import LabFacilities from './views/lab-assistant-views/lab-facilities';
-import LabAssistantProfile from './views/lab-assistant-views/lab-assistant-profile';
+import LA from './views/lab-assistant-views/lab-assistant-home.page';
+import LabFacilities from './views/lab-assistant-views/lab-facilities.page';
+import LabAssistantProfile from './views/lab-assistant-views/lab-assistant-profile.page';
 
 // Lab Assistant <- Test
-import Test from './views/lab-assistant-views/viewTest';
-import UpdateTest from "./views/lab-assistant-views/updateTest";
+import Test from './views/lab-assistant-views/viewTest.page';
+import UpdateTest from "./views/lab-assistant-views/updateTest.page";
 
 // Lab Assistant <- Inventory{Equipment}
-import Equipment from './views/lab-assistant-views/viewInventory';
-import UpdateEquipment from "./views/lab-assistant-views/updateInventory";
+import Equipment from './views/lab-assistant-views/viewInventory.page';
+import UpdateEquipment from "./views/lab-assistant-views/updateInventory.page";
 
 // Lab Assistant <- Report
-import LabReport from './views/lab-assistant-views/viewReport';
-import UpdateReport from "./views/lab-assistant-views/updateReport";
+import LabReport from './views/lab-assistant-views/viewReport.page';
+import UpdateReport from "./views/lab-assistant-views/updateReport.page";
 
 // Lab Assistant <- Sample
-import UpdateSample from "./views/lab-assistant-views/sample/updateSample";
-import ViewSample from "./views/lab-assistant-views/sample/viewSample";
+import UpdateSample from "./views/lab-assistant-views/sample/updateSample.page";
+import ViewSample from "./views/lab-assistant-views/sample/viewSample.page";
 
 // supplier manager imports
-import SM from "./views/supplier-manager-views/supplier-manager-home";
+import SM from "./views/supplier-manager-views/supplier-manager-home.page";
 //import SearchDoctors from './views/patient-views/searchDoctors';
-import SupplierRegistration from './views/supplier-manager-views/supplier-registration';
-import SupplierProfile from './views/supplier-manager-views/supplier-profile';
-import SupplierList from './views/supplier-manager-views/supplier-list';
-import SupplierPayment from './views/supplier-manager-views/supplier-payment';
-import SupplierInventoryEquipment from './views/supplier-manager-views/supplier-inventory-equipment';
-import SupplierInventoryMedicine from './views/supplier-manager-views/supplier-inventory-medicine';
-import SupplierOrderRequest from './views/supplier-manager-views/supplier-order-request';
-import SupplierOrderConfirmation from './views/supplier-manager-views/supplier-order-confirmation';
-import SupplierOrderPharmacy from './views/supplier-manager-views/supplier-order-pharmacy';
+import SupplierRegistration from './views/supplier-manager-views/supplier-registration.page';
+import SupplierProfile from './views/supplier-manager-views/supplier-profile.page';
+import SupplierList from './views/supplier-manager-views/supplier-list.page';
+import SupplierPayment from './views/supplier-manager-views/supplier-payment.page';
+import SupplierInventoryEquipment from './views/supplier-manager-views/supplier-inventory-equipment.page';
+import SupplierInventoryMedicine from './views/supplier-manager-views/supplier-inventory-medicine.page';
+import SupplierOrderRequest from './views/supplier-manager-views/supplier-order-request.page';
+import SupplierOrderConfirmation from './views/supplier-manager-views/supplier-order-confirmation.page';
+import SupplierOrderPharmacy from './views/supplier-manager-views/supplier-order-pharmacy.page';
 
 
 // resource person imports
-import RP from "./views/resource-manager-views/resource-manager-home";
-import RoomType from './views/resource-manager-views/roomType';
-import Room from './views/resource-manager-views/room';
-import EditRoom from './views/resource-manager-views/editRoom';
+import RP from "./views/resource-manager-views/resource-manager-home.page";
+import RoomType from './views/resource-manager-views/roomType.page';
+import Room from './views/resource-manager-views/room.page';
+import EditRoom from './views/resource-manager-views/editRoom.page';
 
 
 // financial manager imports
-import FM from './views/financial-manager-views/financial-manager-home';
-import Invoice from './views/financial-manager-views/invoice';
+import FM from './views/financial-manager-views/financial-manager-home.page';
+import Invoice from './views/financial-manager-views/invoice.page';
 
 
 
@@ -105,6 +105,7 @@ function App() {
 
         {/* common routes */}
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/contact-us" element={<Contact />} />
@@ -128,11 +129,20 @@ function App() {
         <Route path="/pharmacist" element={<Pharmacist />} />
         <Route path="/pharmacistProfile" element={<PharmacistProfile />} />
         <Route path="/addMedicine" element={<FormPage />} />
-        <Route path="/updateProfile" element={<updateProfile />} />
+        <Route path="/updateProfile" element={<UpdateProfile />} />
         <Route path="/updateMedicine" element={<UpdateMedicine/>}/>
         <Route path="/medicineStore" element={<MedicineStore />} />
         <Route path="/medicineOrder" element={<MedicineOrder />} />
         <Route path="/medicineSales" element={<MedicineSales />} />
+
+        <Route path="/pharmacistProfile" element={<PharmacistProfile/>} />
+        <Route path="/updateProfile" element={<updateProfile />} />
+        <Route path="/addMedicine" element={<addMedicine/>} />
+        <Route path="/updateMedicine" element={<updateMedicine />} />
+        <Route path="/medicineStore" element={<MedicineStore/>} />
+        <Route path="/medicineOrder" element={<MedicineOrder/>} />
+        <Route path="/medicineSales" element={<MedicineSales/>} />
+        <Route path="/pharmacist/*" element={<Pharmacist />} />  
 
         {/* Patient Routes */}
         <Route path="/searchDoctors" element={<SearchDoctors />} />
@@ -150,18 +160,7 @@ function App() {
         <Route path="/rescedule-appointment" exact Component={Reschedule} />
         <Route path="/delete-appointment" exact Component={Delete} />
         <Route path="/editinq/:id" element={<EditInquiry/>} />
-
-
-        {/*Pharmacist Routes */}
-        <Route path="/pharmacistProfile" element={<PharmacistProfile/>} />
-        <Route path="/updateProfile" element={<updateProfile />} />
-        <Route path="/addMedicine" element={<addMedicine/>} />
-        <Route path="/updateMedicine" element={<updateMedicine />} />
-        <Route path="/medicineStore" element={<MedicineStore/>} />
-        <Route path="/medicineOrder" element={<MedicineOrder/>} />
-        <Route path="/medicineSales" element={<MedicineSales/>} />
-        <Route path="/pharmacist/*" element={<Pharmacist />} />    
-
+  
 
         {/* Resource person Routes */}
         <Route path="/resource-person" element={<RP />} />
