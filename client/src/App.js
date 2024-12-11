@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./views/Home.page";
 import { Login, Signup } from "./views/Index.page";
 import Contact from './views/ContactUs.page';
+import About from './views/About.page';
 
 // doctor imports
 import Doctor from './views/doctor-views/doctor-home.page';
@@ -109,6 +110,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/about-us" element={<About />} />
 
         {/* Doctor Routes */}
         <Route path="/doctor" element={<Doctor />} />
